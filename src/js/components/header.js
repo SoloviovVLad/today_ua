@@ -1,20 +1,44 @@
 const header = () => {
-	// const selectors = {
-	// 	trigger: '.js-header-triger',
-	// 	bodyMod: 'body--open_menu',
-	// 	lang: '.header_lang__trigger',
-	// 	langDropdown: '.header_lang__dropdown',
-	// 	langDropdownOpen: 'header_lang--open_state',
-	// };
+	const selectors = {
+		iconSearch: '.js-header-icon-search',
+		burger: '.js-header-burger',
+	};
 
-	// const burger = document.querySelector(selectors.trigger);
+	const classes = {
+		bodyMod: 'body--open_menu',
+		searchMenu: 'header--open_search',
+		navMenu: 'header--open_nav',
+	};
 
-	// if (burger) {
-	// 	burger.addEventListener('click', () => {
-	// 		document.body.classList.toggle(selectors.bodyMod);
-	// 	});
-	// }
+	const iconSearch = document.querySelector(selectors.iconSearch);
+	const burger = document.querySelector(selectors.burger);
+	const headerEl = document.querySelector('.header');
 
+	if (headerEl && iconSearch) {
+		iconSearch.addEventListener('click', () => {
+			if (!headerEl.classList.contains(classes.searchMenu)) {
+				if (headerEl.classList.contains(classes.navMenu)) {
+					headerEl.classList.remove(classes.navMenu);
+				}
+				headerEl.classList.add(classes.searchMenu);
+			} else {
+				headerEl.classList.toggle(classes.searchMenu);
+			}
+		});
+	}
+
+	if (headerEl && burger) {
+		burger.addEventListener('click', () => {
+			if (!headerEl.classList.contains(classes.navMenu)) {
+				if (headerEl.classList.contains(classes.searchMenu)) {
+					headerEl.classList.remove(classes.searchMenu);
+				}
+				headerEl.classList.add(classes.navMenu);
+			} else {
+				headerEl.classList.toggle(classes.navMenu);
+			}
+		});
+	}
 	// const lang = document.querySelector(selectors.lang);
 	// const langDropdown = document.querySelector(selectors.langDropdown);
 
