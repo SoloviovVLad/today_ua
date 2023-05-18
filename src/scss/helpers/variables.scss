@@ -1,6 +1,5 @@
 //---------------------------------------------fonts
-$font_1: 'Oswald', sans-serif;
-$openSans: 'OpenSans', sans-serif;
+$font_1: 'GraphikLCG', sans-serif;
 
 $font_size_base: 1.6rem;
 //---------------------------------------------fonts###
@@ -14,19 +13,16 @@ $color_link_base: #4aa3df;
 
 $body_bg: $white;
 
-$dark_green: #013D3D;
-$green_1: #008556;
-$green_2: #006A6A;
-$green_3: #9DDEBF;
-$green_4: #6EEEA1;
-
-$black_1: #474747;
-
+$text: #222222;
+$gray: #cecece;
+$blue: #0c7dca;
+$blue_2: #2185c7;
+$orange: #f5a13a;
 //---------------------------------------------colors###
 
 //---------------------------------------------layout
 
-$page_width: 168rem;
+$page_width: 117rem;
 
 //---------------------------------------------layout###
 
@@ -38,8 +34,8 @@ $gl_radius: 0.5rem;
 
 //---------------------------------------------media points
 
-$point_0: 1441px;
-$point_1: 1200px;
+// $point_0: 1100px;
+$point_1: 1100px;
 $point_2: 1024px;
 $point_3: 1023px;
 $point_4: 768px;
@@ -57,7 +53,7 @@ $input_offset: 0 1.6rem;
 $input_font_size: 1.2rem;
 $input_border_color: $black;
 $input_border_color_active: $black;
-$input_placeholder_color: rgba($black, 0.62);
+$input_placeholder_color: #7e7e7e;
 $input_text_color: $black;
 $input_radius: 0;
 
