@@ -8,8 +8,9 @@
 	}
 }
 
-@include font("Oswald", "Oswald-Regular", "400", "normal");
-@include font("Oswald", "Oswald-Light", "300", "light");
-@include font("Oswald", "Oswald-Bold", "700", "bold");
+@include font("GraphikLCG", "GraphikLCG-Light", "300", "light");
+@include font("GraphikLCG", "GraphikLCG-Regular", "400", "normal");
+@include font("GraphikLCG", "GraphikLCG-RegularItalic", "400", "italic");
+@include font("GraphikLCG", "GraphikLCG-Medium", "600", "normal");
+@include font("GraphikLCG", "GraphikLCG-Semibold", "600", "normal");
 
-@include font("OpenSans", "OpenSans-Regular", "400", "normal");
