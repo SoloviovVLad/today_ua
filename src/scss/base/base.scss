@@ -3,7 +3,13 @@
 :root {
 	--full-screen: calc(var(--vh, 1vh) * 100);
 
-	--header-top-indent: 1rem;
+	@include bp($point_4, min) {
+		--header-top-indent: 1rem;
+	}
+
+	@include bp($point_4 - 1) {
+		--header-top-indent: .5rem;
+	}
 	// --height-footer: 28.6rem;
 	--footer-indent-right: 7.6rem;
 
@@ -22,13 +28,7 @@
 		--gl-indent: 1.5rem;
 	}
 
-	@include bp($point_2, min) {
-		--height-header: 9.4rem;
-	}
-
-	@include bp($point_3 - 1) {
-		--height-header: 7.2rem;
-	}
+	--height-header: 9.4rem;
 }
 
 html {
