@@ -1,3 +1,60 @@
+-
+	footer_nav = [
+		{
+			title: 'Новини',
+			link: '#'
+		},
+		{
+			title: 'Бізнес',
+			link: '#'
+		},
+		{
+			title: 'Фінанси',
+			link: '#'
+		},
+		{
+			title: 'Tech',
+			link: '#'
+		},
+		{
+			title: 'Life',
+			link: '#'
+		},
+		{
+			title: 'Спецпроекти',
+			link: '#'
+		},
+		{
+			title: 'Контакти',
+			link: '#'
+		},
+	]
+
+	copyright = [
+		"При використанні вмісту сайту активне гіперпосилання на today.ua обов'язкове. Думка автора статті може не відображати думку редакції.",
+		'Редакція не несе відповідальності за обґрунтованість і тлумачення думки автора, а сайт є лише носієм інформації.',
+	]
 mixin footer
 	footer.footer
 		.footer_in
+			.footer__top
+				.footer_logo
+					a.footer_logo__img_w(href='/')
+						img.footer_logo__img(src="images/logo_footer.png", alt="logo footer")
+					.footer_logo__descr Today.ua - всеукраїнський інформаційний портал. Тільки чесні новини, тільки оперативна інформація.
+				.footer_nav
+					ul.footer_nav__list
+						each item in footer_nav
+							li.footer_nav__item
+								a.footer_nav__link(href=item.link)!= item.title
+				.footer_contacts
+					p Редакція та контактна інформація
+					span Зв'язатися з нами:
+					a(href='mailto:info@today.ua') info@today.ua
+			.footer__bottom
+				.footer__privacy
+					p © 2017-2023 ТОВ "ТУДЕЙ"
+					a(href="#") Політика конфіденційності
+				.footer__copyright
+					each p in copyright
+						p!= p
