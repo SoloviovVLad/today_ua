@@ -1,3 +1,88 @@
+-
+	nav_list = [
+		{
+			title: 'Політика',
+			link: '#',
+		},
+		{
+			title: 'Бізнес',
+			link: '#',
+		},
+		{
+			title: 'Суспільство',
+			link: '#',
+		},
+		{
+			title: 'Події',
+			link: '#',
+		},
+		{
+			title: 'Шоу-бізнес',
+			link: '#',
+		},
+		{
+			title: 'Авто',
+			link: '#',
+		},
+	]
+
+	lang = [
+		{
+			title:'EN'
+		},
+		{
+			title:'UKR'
+		},
+		{
+			title:'RU'
+		},
+	]
+
+	social = ['facebook', 'telegram']
 mixin header
 	header.header
 		.header_in
+			a.header__logo_w(href='/')
+				img.header__logo(src="images/logo.png", alt="logo")
+			.header_menu
+				nav.header_nav
+					ul.header_nav__list
+						each item in nav_list
+							li.header_nav__item
+								a.header_nav__link(href!= item.link)!= item.title
+				.header_lang
+					ul.header_lang__list
+						each item in lang
+							li.header_lang__item
+								a.header_lang__link(href='#')!= item.title
+				.header_search.js-header-icon-search
+					.header_search__close
+						span
+					.header_search__icon_w
+						+icon('search', 'icon--size_mod')
+				.header_burger.js-header-burger
+					span
+		.header_dropdown__search
+			.header_dropdown__search_in
+				form.menu_search
+					input.menu_search__input(type='text' placeholder='Пошук по сайту')
+					button.menu_search__btn(type='submit') Шукати
+		.header_dropdown__nav
+					.menu_nav
+						.header_lang
+							ul.header_lang__list
+								each item in lang
+									li.header_lang__item
+										a.header_lang__link(href='#')!= item.title
+						nav.menu_nav__nav
+							ul.menu_nav__list
+								each item in nav_list
+									li.menu_nav__item
+										a.menu_nav__link(href!= item.link)!= item.title
+						.menu_nav__social
+							ul.menu_nav__social_list
+								each item in social
+									li.menu_nav__social_item
+										a.menu_nav__social_link(href='#')
+											.menu_nav__social_icon
+												+icon(item, 'icon--size_mod')

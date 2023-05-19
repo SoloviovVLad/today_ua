@@ -3,31 +3,32 @@
 :root {
 	--full-screen: calc(var(--vh, 1vh) * 100);
 
+	@include bp($point_4, min) {
+		--header-top-indent: 1rem;
+	}
+
+	@include bp($point_4 - 1) {
+		--header-top-indent: .5rem;
+	}
 	// --height-footer: 28.6rem;
 	--footer-indent-right: 7.6rem;
 
-	@include bp($point_0, min) {
+	@include bp($point_1, min) {
 		--gl-indent: 12rem;
 	}
 
-	@include bp($point_0 - 1, $point_1) {
+	@include bp($point_1 - 1, $point_2) {
 		--gl-indent: 7rem;
 	}
 
-	@include bp($point_1 - 1, $point_4) {
+	@include bp($point_3, $point_4) {
 		--gl-indent: 3.9rem;
 	}
 	@include bp($point_4 - 1) {
 		--gl-indent: 1.5rem;
 	}
 
-	@include bp($point_2, min) {
-		--height-header: 9.2rem;
-	}
-
-	@include bp($point_3 - 1) {
-		--height-header: 7.2rem;
-	}
+	--height-header: 9.4rem;
 }
 
 html {
