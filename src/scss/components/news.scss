@@ -1,0 +1,19 @@
+.news_wrap_dev {
+	padding: 4rem 1.5rem;
+	max-width: $page_width;
+	margin: 0 auto;
+}
+
+.news_wrapper {
+	display: flex;
+
+	padding-top: 5.7rem;
+
+	.aside {
+		margin-right: 3rem;
+	}
+}
+
+.news_main_col {
+	width: 66.66%;
+}

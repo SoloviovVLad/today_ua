@@ -1,0 +1,10 @@
+mixin news_item(data)
+	.news_item(class=data.mod)
+		if data.img
+			.news_item__img_w
+				img.news_item__img(src=`images/news/${data.img}`, alt="news image")
+		.news_item__content
+			a.news_item__title_w(href='#')
+				h2.news_item__title!= data.title
+			.news_item__date_w
+				time.news_item__date!= data.date

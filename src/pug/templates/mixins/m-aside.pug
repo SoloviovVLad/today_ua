@@ -1,0 +1,29 @@
+mixin aside(data)
+	aside.aside
+		.aside_in
+			if data.main_title
+				+main_title(data.main_title)
+			.aside__list
+				each item in data.list_news
+					if item.telegram
+						.aside_telegram
+							a.aside_telegram__content(href='#')
+								.aside_telegram__icon_w
+									+icon('telegram', 'icon--size_mod')
+								h3.aside_telegram__title
+									span Читайте нас в Telegram.
+									span  Підписуйтесь на наш канал
+					else if item.date
+						.aside_date
+							h4.aside_date__title!=item.date
+							.aside_date__line
+					else
+						.aside_item
+							if item.img
+								.aside_item__img_w
+									img.aside_item__img(src=`images/news/${item.img}`, alt="aside news image")
+							a.aside_item__content(href='#')
+								time.aside_item__time!= item.time
+								h3.aside_item__title(class!= item.mod_title ? 'aside_item__title--bold_mod' : '')
+									span!= item.title
+			button.aside__more_btn(type='button') Завантажити ще
