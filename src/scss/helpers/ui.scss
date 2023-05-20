@@ -3,3 +3,26 @@
 
 	pointer-events: none;
 }
+
+.main_title {
+	display: flex;
+	align-items: center;
+	padding-bottom: 2.2rem;
+
+	border-bottom: 1px dotted #ccc;
+}
+
+.main_title__caption {
+	font-size: 2.4rem;
+	font-weight: 400;
+
+	color: $text;
+}
+
+.main_title__link {
+	margin-left: auto;
+
+	font-size: 1.6rem;
+
+	color: $blue;
+}

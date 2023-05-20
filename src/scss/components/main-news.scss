@@ -1,0 +1,16 @@
+.main_news {
+}
+
+.main_news__wrap {
+	display: flex;
+	margin-top: 2.7rem;
+
+	& .news_item {
+		max-width: 36.5rem;
+		width: 33.33%;
+
+		&:not(:first-child) {
+			margin-left: auto;
+		}
+	}
+}

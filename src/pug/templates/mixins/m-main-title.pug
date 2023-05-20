@@ -1,0 +1,5 @@
+mixin main_title(data)
+	.main_title
+		h3.main_title__caption!= data.title
+		if data.link
+			a.main_title__link(href=data.link)!=data.link_title

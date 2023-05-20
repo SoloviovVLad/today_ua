@@ -1,0 +1,7 @@
+mixin grid_news(data)
+	.grid_news
+		if data.main_title
+			+main_title(data.main_title)
+		.grid_news__list
+			each item in data.other_news
+				+news_item(item)

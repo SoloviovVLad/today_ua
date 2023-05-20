@@ -1,0 +1,160 @@
+aside {
+	width: 33.33%;
+	max-width: 36.5rem;
+}
+
+.aside__list {
+	margin-top: 3rem;
+	margin-bottom: 5.1rem;
+}
+
+.aside_item {
+	width: 100%;
+
+	&:not(:last-child) {
+		margin-bottom: 3.1rem;
+	}
+}
+
+.aside_item__img_w {
+	width: 100%;
+	height: 100%;
+
+	&:not(:last-child) {
+		margin-bottom: 2.7rem;
+	}
+}
+
+.aside_item__img {
+	@include cover_img;
+}
+
+.aside_item__content {
+	display: flex;
+
+	&:hover {
+		span {
+			border-bottom: 1px solid currentColor;
+		}
+	}
+}
+
+.aside_item__time {
+	margin-top: .3rem;
+	margin-right: 1.6rem;
+
+	font-size: 1.4rem;
+
+	color: $gray_4;
+}
+
+.aside_item__title {
+	display: inline;
+
+	font-size: 1.6rem;
+	line-height: 1.36;
+	font-weight: 400;
+	color: $text;
+
+	&.aside_item__title--bold_mod {
+		font-weight: 600;
+	}
+
+	span {
+		border-bottom: 1px solid transparent;
+
+		transition: border .15s ease-in-out;
+	}
+}
+
+.aside_date {
+	position: relative;
+
+	margin: 4.2rem 0 3.3rem;
+}
+
+.aside_date__title {
+	position: relative;
+	z-index: 10;
+
+	padding-right: 2rem;
+	width: max-content;
+
+	font-size: 2rem;
+	font-weight: 400;
+
+	background-color: $white;
+}
+
+.aside_date__line {
+	position: absolute;
+	top: calc(50% - .5px);
+	right: 0;
+
+	width: 100%;
+	height: 1px;
+
+	background-color: #e5e5e5;
+}
+
+.aside_telegram {
+	margin: 3.1rem 0 3rem;
+
+	&:hover {
+		& .aside_telegram__icon_w {
+			transform: translate(.5rem, -.5rem);
+		}
+
+		& .aside_telegram__title {
+			opacity: .7;
+		}
+	}
+}
+
+.aside_telegram__content {
+	display: flex;
+}
+
+.aside_telegram__icon_w {
+	width: 3.5rem;
+	height: 3.5rem;
+	margin-right: 1.4rem;
+
+	color: $blue_3;
+
+	transition: transform .25s ease-in-out;
+}
+
+.aside_telegram__title {
+	color: $text;
+
+	transition: opacity .25s ease-in-out;
+
+	span {
+		display: block;
+		line-height: 1.35;
+	}
+}
+
+.aside__more_btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 100%;
+	height: 5rem;
+
+	font-size: 1.6rem;
+
+	color: $white;
+
+	background-color: $blue_3;
+
+	transition: background-color .3s ease;
+
+	cursor: pointer;
+
+	&:hover {
+		background-color: $blue;
+	}
+}
