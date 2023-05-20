@@ -6,11 +6,21 @@
 	margin-top: 2.7rem;
 
 	& .news_item {
-		max-width: 36.5rem;
 		width: 33.33%;
 
 		&:not(:first-child) {
 			margin-left: auto;
+		}
+
+		&:not(:last-child) {
+			margin-right: 3rem;
+		}
+		max-width: 36.5rem;
+
+		@include bp($point_1, min) {
+		}
+		@include bp($point_1 - 1) {
+			max-width: 30rem;
 		}
 	}
 }

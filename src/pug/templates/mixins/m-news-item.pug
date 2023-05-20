@@ -1,7 +1,7 @@
 mixin news_item(data)
 	.news_item(class=data.mod)
 		if data.img
-			.news_item__img_w
+			a.news_item__img_w(href='#')
 				img.news_item__img(src=`images/news/${data.img}`, alt="news image")
 		.news_item__content
 			a.news_item__title_w(href='#')

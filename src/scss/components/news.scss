@@ -5,12 +5,29 @@
 }
 
 .news_wrapper {
-	display: flex;
-
 	padding-top: 5.7rem;
 
 	.aside {
-		margin-right: 3rem;
+		@include bp($point_1, min) {
+			margin-right: 3rem;
+		}
+
+		@include bp($point_1 - 1, $point_4) {
+			margin-right: 1.5rem;
+		}
+
+		@include bp($point_4 - 1) {
+
+		}
+	}
+
+	@include bp($point_4, min) {
+		display: flex;
+	}
+
+	@include bp($point_4 - 1) {
+		max-width: 50rem;
+		margin: 0 auto;
 	}
 }
 

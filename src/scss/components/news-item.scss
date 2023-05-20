@@ -4,8 +4,15 @@
 
 	&.news_item--size_mod {
 		position: relative;
-		max-height: 36.1rem;
 		height: 100vw;
+
+		@include bp($point_1, min) {
+			max-height: 36.1rem;
+		}
+
+		@include bp($point_1 - 1) {
+			max-height: 30rem;
+		}
 	}
 
 	.others_news & {
@@ -15,6 +22,7 @@
 			border-bottom: 1px dotted #ccc;
 		}
 	}
+
 	.grid_news & {
 		width: 50%;
 		flex-direction: column;
@@ -39,6 +47,12 @@
 
 		&:not(:last-child) {
 			margin-bottom: 2.5rem;
+		}
+	}
+
+	&:hover {
+		& ~ .news_item__content h2 {
+			border-bottom: 1px solid currentColor;
 		}
 	}
 }
@@ -92,7 +106,6 @@
 .news_item__title {
 	display: inline;
 
-	font-size: 2.4rem;
 	font-weight: 600;
 	line-height: 1.25;
 	letter-spacing: -.007em;
@@ -104,6 +117,14 @@
 
 	.news_item--size_mod & {
 		color: $white;
+	}
+
+	@include bp($point_1, min) {
+		font-size: 2.4rem;
+	}
+
+	@include bp($point_1 - 1) {
+		font-size: 2.1rem;
 	}
 }
 
