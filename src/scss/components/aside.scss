@@ -1,16 +1,5 @@
 aside {
-
-	@include bp($point_1, min) {
-		max-width: 36.5rem;
-	}
-
-	@include bp($point_1 - 1, $point_4) {
-		max-width: 30rem;
-	}
-
-	@include bp($point_4, min) {
-		width: 33.33%;
-	}
+	width: 100%;
 }
 
 .aside__list {
@@ -19,6 +8,7 @@ aside {
 	@include bp($point_4, min) {
 		margin-bottom: 5.1rem;
 	}
+
 	@include bp($point_4 - 1) {
 		margin-bottom: 3.3rem;
 	}
@@ -89,6 +79,7 @@ aside {
 	font-size: 1.6rem;
 	line-height: 1.36;
 	font-weight: 400;
+
 	color: $text;
 
 	&.aside_item__title--bold_mod {
@@ -180,28 +171,5 @@ aside {
 	span {
 		display: block;
 		line-height: 1.35;
-	}
-}
-
-.aside__more_btn {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	width: 100%;
-	height: 5rem;
-
-	font-size: 1.6rem;
-
-	color: $white;
-
-	background-color: $blue_3;
-
-	transition: background-color .3s ease-in-out;
-
-	cursor: pointer;
-
-	&:hover {
-		background-color: $orange;
 	}
 }

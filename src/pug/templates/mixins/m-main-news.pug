@@ -1,0 +1,9 @@
+include ./m-main-title
+include ./m-news-item
+
+mixin main_news(data)
+	.main_news
+		+main_title(data.main_title)
+		.main_news__wrap
+			each item in data.news
+				+news_item(item)
