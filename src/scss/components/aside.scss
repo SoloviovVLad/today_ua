@@ -15,14 +15,26 @@ aside {
 
 .aside__list {
 	margin-top: 3rem;
-	margin-bottom: 5.1rem;
+
+	@include bp($point_4, min) {
+		margin-bottom: 5.1rem;
+	}
+	@include bp($point_4 - 1) {
+		margin-bottom: 3.3rem;
+	}
 }
 
 .aside_item {
 	width: 100%;
 
 	&:not(:last-child) {
-		margin-bottom: 3.1rem;
+		@include bp($point_4, min) {
+			margin-bottom: 3.1rem;
+		}
+
+		@include bp($point_4 - 1) {
+			margin-bottom: 2.1rem;
+		}
 	}
 }
 
@@ -32,7 +44,13 @@ aside {
 	height: 100%;
 
 	&:not(:last-child) {
-		margin-bottom: 2.7rem;
+		@include bp($point_4, min) {
+			margin-bottom: 2.7rem;
+		}
+
+		@include bp($point_4 - 1) {
+			margin-bottom: 1.7rem;
+		}
 	}
 
 	&:hover {
@@ -87,7 +105,13 @@ aside {
 .aside_date {
 	position: relative;
 
-	margin: 4.2rem 0 3.3rem;
+	@include bp($point_4, min) {
+		margin: 4.2rem 0 3.3rem;
+	}
+
+	@include bp($point_4 - 1) {
+		margin: 3.2rem 0 2.3rem;
+	}
 }
 
 .aside_date__title {
@@ -115,7 +139,13 @@ aside {
 }
 
 .aside_telegram {
-	margin: 3.1rem 0 3rem;
+	@include bp($point_4, min) {
+		margin: 3.1rem 0 3rem;
+	}
+
+	@include bp($point_4 - 1) {
+		margin: 2.1rem 0 2.1rem;
+	}
 
 	&:hover {
 		& .aside_telegram__icon_w {
