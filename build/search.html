@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Search</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png"/>
+    <link rel="stylesheet" href="css/main.min.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header_in"><a class="header__logo_w" href="/"><img class="header__logo" src="images/logo.png" alt="logo"/></a>
+        <div class="header_menu">
+          <nav class="header_nav">
+            <ul class="header_nav__list">
+              <li class="header_nav__item"><a class="header_nav__link" href="#">Політика</a></li>
+              <li class="header_nav__item"><a class="header_nav__link" href="#">Бізнес</a></li>
+              <li class="header_nav__item"><a class="header_nav__link" href="#">Суспільство</a></li>
+              <li class="header_nav__item"><a class="header_nav__link" href="#">Події</a></li>
+              <li class="header_nav__item"><a class="header_nav__link" href="#">Шоу-бізнес</a></li>
+              <li class="header_nav__item"><a class="header_nav__link" href="#">Авто</a></li>
+            </ul>
+          </nav>
+          <div class="header_lang">
+            <ul class="header_lang__list">
+              <li class="header_lang__item"><a class="header_lang__link" href="#">EN</a></li>
+              <li class="header_lang__item"><a class="header_lang__link" href="#">UKR</a></li>
+              <li class="header_lang__item"><a class="header_lang__link" href="#">RU</a></li>
+            </ul>
+          </div>
+          <div class="header_search js-header-icon-search">
+            <div class="header_search__close"><span></span></div>
+            <div class="header_search__icon_w">
+              <svg class="icon icon--size_mod">
+                <use xlink:href="images/sprite/sprite-icons.svg#search"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="header_burger js-header-burger"><span></span></div>
+        </div>
+      </div>
+      <div class="header_dropdown__search">
+        <div class="header_dropdown__search_in">
+          <form class="menu_search">
+            <input class="menu_search__input input_search" type="text" placeholder="Пошук по сайту"/>
+            <button class="menu_search__btn button_search" type="submit">Шукати</button>
+          </form>
+        </div>
+      </div>
+      <div class="header_dropdown__nav">
+        <div class="menu_nav">
+          <div class="header_lang">
+            <ul class="header_lang__list">
+              <li class="header_lang__item"><a class="header_lang__link" href="#">EN</a></li>
+              <li class="header_lang__item"><a class="header_lang__link" href="#">UKR</a></li>
+              <li class="header_lang__item"><a class="header_lang__link" href="#">RU</a></li>
+            </ul>
+          </div>
+          <nav class="menu_nav__nav">
+            <ul class="menu_nav__list">
+              <li class="menu_nav__item"><a class="menu_nav__link" href="#">Політика</a></li>
+              <li class="menu_nav__item"><a class="menu_nav__link" href="#">Бізнес</a></li>
+              <li class="menu_nav__item"><a class="menu_nav__link" href="#">Суспільство</a></li>
+              <li class="menu_nav__item"><a class="menu_nav__link" href="#">Події</a></li>
+              <li class="menu_nav__item"><a class="menu_nav__link" href="#">Шоу-бізнес</a></li>
+              <li class="menu_nav__item"><a class="menu_nav__link" href="#">Авто</a></li>
+            </ul>
+          </nav>
+          <div class="menu_nav__social">
+            <ul class="menu_nav__social_list">
+              <li class="menu_nav__social_item"><a class="menu_nav__social_link" href="#">
+                  <div class="menu_nav__social_icon">
+                    <svg class="icon icon--size_mod">
+                      <use xlink:href="images/sprite/sprite-icons.svg#facebook"></use>
+                    </svg>
+                  </div></a></li>
+              <li class="menu_nav__social_item"><a class="menu_nav__social_link" href="#">
+                  <div class="menu_nav__social_icon">
+                    <svg class="icon icon--size_mod">
+                      <use xlink:href="images/sprite/sprite-icons.svg#telegram"></use>
+                    </svg>
+                  </div></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="wrapper">
+      <div class="base">
+        <div class="news_wrap_dev">
+          <div class="breadcrumbs"><a href="#">Головна</a>
+            <div class="breadcrumbs__icon">
+              <svg class="icon icon--size_mod">
+                <use xlink:href="images/sprite/sprite-icons.svg#breadcrumbs_arrow"></use>
+              </svg>
+            </div><a href="#">Пошук</a>
+          </div>
+          <div class="news_wrapper news_wrapper--mob_no_sidebar">
+            <div class="news_wrapper__main">
+              <div class="search">
+                <div class="search__wrap">
+                  <div class="search__result"><span>порошенко</span><span>- результати пошуку</span></div>
+                  <div class="search__form_w">
+                    <form class="search_form">
+                      <div class="search_form__wrap">
+                        <input class="search_form__input input_search" type="text" placeholder="Пошук по сайту">
+                        <button class="search_form__btn button_search" type="submit">Шукати</button>
+                      </div>
+                      <div class="search_form__descr">Якщо ви не задоволені результатом, будь ласка пошукайте ще раз</div>
+                    </form>
+                  </div>
+                  <div class="search__list">
+                                  <div class="news_item"><a class="news_item__img_w" href="#"><img class="news_item__img" src="images/news/news_3.jpg" alt="news image"></a>
+                                    <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                        <h2 class="news_item__title">В Україні наприкінці березня знизилися ціни на гречку, борошно та олію</h2></a>
+                                      <div class="news_item__date_w">
+                                        <time class="news_item__date">29 березня 2023, 12:01</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="news_item"><a class="news_item__img_w" href="#"><img class="news_item__img" src="images/news/news_4.jpg" alt="news image"></a>
+                                    <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                        <h2 class="news_item__title">РФ завдала одного з наймасштабніших ударів по Україні з початку війни: понад 80 ракет та атак дронами</h2></a>
+                                      <div class="news_item__date_w">
+                                        <time class="news_item__date">29 березня 2023, 12:01</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="news_item"><a class="news_item__img_w" href="#"><img class="news_item__img" src="images/news/news_5.jpg" alt="news image"></a>
+                                    <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                        <h2 class="news_item__title">У Міноборони розповіли, де відбудеться наступна важлива битва за Донбас</h2></a>
+                                      <div class="news_item__date_w">
+                                        <time class="news_item__date">29 березня 2023, 12:01</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="news_item"><a class="news_item__img_w" href="#"><img class="news_item__img" src="images/news/news_7.jpg" alt="news image"></a>
+                                    <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                        <h2 class="news_item__title">Еліна Світоліна у сукні з декольте до пупка з'явилася на балу у Монако</h2></a>
+                                      <div class="news_item__date_w">
+                                        <time class="news_item__date">29 березня 2023, 12:01</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="news_item"><a class="news_item__img_w" href="#"><img class="news_item__img" src="images/news/news_8.jpg" alt="news image"></a>
+                                    <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                        <h2 class="news_item__title">“Хочу старіти природно“: зірка “Відчайдушних домогосподарок“ здивувала зовнішнім виглядом</h2></a>
+                                      <div class="news_item__date_w">
+                                        <time class="news_item__date">29 березня 2023, 12:01</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="news_item"><a class="news_item__img_w" href="#"><img class="news_item__img" src="images/news/news_9.jpg" alt="news image"></a>
+                                    <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                        <h2 class="news_item__title">Сирна паска “трикутник“ без випічки: як приготувати смачне частування на свято</h2></a>
+                                      <div class="news_item__date_w">
+                                        <time class="news_item__date">29 березня 2023, 12:01</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="news_item"><a class="news_item__img_w" href="#"><img class="news_item__img" src="images/news/news_3.jpg" alt="news image"></a>
+                                    <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                        <h2 class="news_item__title">В Україні наприкінці березня знизилися ціни на гречку, борошно та олію</h2></a>
+                                      <div class="news_item__date_w">
+                                        <time class="news_item__date">29 березня 2023, 12:01</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="news_item"><a class="news_item__img_w" href="#"><img class="news_item__img" src="images/news/news_4.jpg" alt="news image"></a>
+                                    <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                        <h2 class="news_item__title">РФ завдала одного з наймасштабніших ударів по Україні з початку війни: понад 80 ракет та атак дронами</h2></a>
+                                      <div class="news_item__date_w">
+                                        <time class="news_item__date">29 березня 2023, 12:01</time>
+                                      </div>
+                                    </div>
+                                  </div>
+                  </div>
+                  <button class="more_btn search__btn_more" type="button">Завантажити ще</button>
+                  <div class="pagination">
+                    <ul class="pagination__list">
+                      <li class="arrow arrow--prev disabled"><a href="#">
+                          <svg class="icon icon--size_mod">
+                            <use xlink:href="images/sprite/sprite-icons.svg#breadcrumbs_arrow"></use>
+                          </svg></a></li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#">4</a></li>
+                      <li class="dots"><span>...</span></li>
+                      <li><a href="#">8</a></li>
+                      <li class="arrow arrow--next"><a href="#">
+                          <svg class="icon icon--size_mod">
+                            <use xlink:href="images/sprite/sprite-icons.svg#breadcrumbs_arrow"></use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="news_wrapper__sidebar">
+              <div class="main_news">
+                <div class="main_title">
+                  <h3 class="main_title__caption">Головне</h3>
+                </div>
+                <div class="main_news__wrap">
+                                <div class="news_item">
+                                  <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                      <h2 class="news_item__title">“У мене немає маленького акуратненького носика“: Світлана Лобода розповіла про пластику обличчя</h2></a>
+                                    <div class="news_item__date_w">
+                                      <time class="news_item__date">29 березня 2023, 12:01</time>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="news_item">
+                                  <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                      <h2 class="news_item__title">ПриватБанк почав виплачувати пенсіонерам по 20 тисяч гривень: хто може отримати гроші</h2></a>
+                                    <div class="news_item__date_w">
+                                      <time class="news_item__date">29 березня 2023, 12:01</time>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="news_item">
+                                  <div class="news_item__content"><a class="news_item__title_w" href="#">
+                                      <h2 class="news_item__title">Верховний суд пояснив, коли автостоянка не несе відповідальності за пошкоджений автомобіль</h2></a>
+                                    <div class="news_item__date_w">
+                                      <time class="news_item__date">29 березня 2023, 12:01</time>
+                                    </div>
+                                  </div>
+                                </div>
+                </div>
+              </div>
+              <aside class="aside">
+                <div class="aside_in">
+                  <div class="main_title">
+                    <h3 class="main_title__caption">Стрічка новин</h3>
+                  </div>
+                  <div class="aside__list">
+                    <div class="aside_item"><a class="aside_item__img_w" href="#"><img class="aside_item__img" src="images/news/news_1.jpg" alt="aside news image"/></a><a class="aside_item__content" href="#">
+                        <time class="aside_item__time">12:01</time>
+                        <h3 class="aside_item__title aside_item__title--bold_mod"><span>Скільки платять українським біженцям у Польщі: озвучено зарплати вчителів, менеджерів та продавців</span></h3></a>
+                    </div>
+                    <div class="aside_item"><a class="aside_item__content" href="#">
+                        <time class="aside_item__time">12:01</time>
+                        <h3 class="aside_item__title"><span>В Україні наприкінці березня знизилися ціни на гречку, борошно та олію</span></h3></a>
+                    </div>
+                    <div class="aside_item"><a class="aside_item__content" href="#">
+                        <time class="aside_item__time">12:01</time>
+                        <h3 class="aside_item__title"><span>ПриватБанк почав виплачувати пенсіонерам по 20 тисяч гривень: хто може отримати гроші</span></h3></a>
+                    </div>
+                    <div class="aside_date">
+                      <h4 class="aside_date__title">05 березня</h4>
+                      <div class="aside_date__line"></div>
+                    </div>
+                    <div class="aside_item"><a class="aside_item__content" href="#">
+                        <time class="aside_item__time">12:01</time>
+                        <h3 class="aside_item__title"><span>У Києві з'явились дешеві 1-кімнатні квартири: яке житло можна купити за 17 тисяч доларів</span></h3></a>
+                    </div>
+                    <div class="aside_telegram"><a class="aside_telegram__content" href="#">
+                        <div class="aside_telegram__icon_w">
+                          <svg class="icon icon--size_mod">
+                            <use xlink:href="images/sprite/sprite-icons.svg#telegram"></use>
+                          </svg>
+                        </div>
+                        <h3 class="aside_telegram__title"><span>Читайте нас в Telegram.</span><span> Підписуйтесь на наш канал</span></h3></a></div>
+                    <div class="aside_item"><a class="aside_item__content" href="#">
+                        <time class="aside_item__time">12:01</time>
+                        <h3 class="aside_item__title"><span>РФ завдала одного з наймасштабніших ударів по Україні з початку війни: понад 80 ракет та атак дронами</span></h3></a>
+                    </div>
+                    <div class="aside_item"><a class="aside_item__content" href="#">
+                        <time class="aside_item__time">12:01</time>
+                        <h3 class="aside_item__title aside_item__title--bold_mod"><span>У Міноборони розповіли, де відбудеться наступна важлива битва за Донбас</span></h3></a>
+                    </div>
+                    <div class="aside_item"><a class="aside_item__content" href="#">
+                        <time class="aside_item__time">12:01</time>
+                        <h3 class="aside_item__title"><span>Як вижити під час бомбардування чи артобстрілу: правила безпеки під час війни</span></h3></a>
+                    </div>
+                  </div>
+                  <button class="more_btn" type="button">Завантажити ще</button>
+                </div>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer_in">
+          <div class="footer__top">
+            <div class="footer_logo"><a class="footer_logo__img_w" href="/"><img class="footer_logo__img" src="images/logo_footer.png" alt="logo footer"/></a>
+              <div class="footer_logo__descr">Today.ua - всеукраїнський інформаційний портал. Тільки чесні новини, тільки оперативна інформація.</div>
+            </div>
+            <div class="footer_nav">
+              <ul class="footer_nav__list">
+                <li class="footer_nav__item"><a class="footer_nav__link" href="#">Новини</a></li>
+                <li class="footer_nav__item"><a class="footer_nav__link" href="#">Бізнес</a></li>
+                <li class="footer_nav__item"><a class="footer_nav__link" href="#">Фінанси</a></li>
+                <li class="footer_nav__item"><a class="footer_nav__link" href="#">Tech</a></li>
+                <li class="footer_nav__item"><a class="footer_nav__link" href="#">Life</a></li>
+                <li class="footer_nav__item"><a class="footer_nav__link" href="#">Спецпроекти</a></li>
+                <li class="footer_nav__item"><a class="footer_nav__link" href="#">Контакти</a></li>
+              </ul>
+            </div>
+            <div class="footer_contacts">
+              <p>Редакція та контактна інформація</p><span>Зв'язатися з нами:</span><a href="mailto:info@today.ua">info@today.ua</a>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__privacy">
+              <p>© 2017-2023 ТОВ "ТУДЕЙ"</p><a href="#">Політика конфіденційності</a>
+            </div>
+            <div class="footer__copyright">
+              <p>При використанні вмісту сайту активне гіперпосилання на today.ua обов'язкове. Думка автора статті може не відображати думку редакції.</p>
+              <p>Редакція не несе відповідальності за обґрунтованість і тлумачення думки автора, а сайт є лише носієм інформації.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/main.js"></script>
+    </div>
+  </body>
+</html>

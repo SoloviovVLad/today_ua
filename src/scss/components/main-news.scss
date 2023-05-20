@@ -4,6 +4,12 @@
 			display: none;
 		}
 	}
+
+	.news_wrapper__sidebar & {
+		&:not(:last-child) {
+			margin-bottom: 4.7rem;
+		}
+	}
 }
 
 .main_news__wrap {
@@ -59,5 +65,18 @@
 				display: none;
 			}
 		}
+
+		.news_wrapper__sidebar & {
+			width: 100%;
+			margin-right: 0;
+
+			&:not(:last-child) {
+				margin-bottom: 2.5rem;
+			}
+		}
+	}
+
+	.news_wrapper__sidebar & {
+		flex-direction: column;
 	}
 }

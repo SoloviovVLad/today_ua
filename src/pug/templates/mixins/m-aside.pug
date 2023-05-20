@@ -1,3 +1,5 @@
+include ./m-main-title
+
 mixin aside(data)
 	aside.aside
 		.aside_in
@@ -26,4 +28,4 @@ mixin aside(data)
 								time.aside_item__time!= item.time
 								h3.aside_item__title(class!= item.mod_title ? 'aside_item__title--bold_mod' : '')
 									span!= item.title
-			button.aside__more_btn(type='button') Завантажити ще
+			button.more_btn(type='button') Завантажити ще
