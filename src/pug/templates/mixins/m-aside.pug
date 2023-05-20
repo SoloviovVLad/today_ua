@@ -20,7 +20,7 @@ mixin aside(data)
 					else
 						.aside_item
 							if item.img
-								.aside_item__img_w
+								a.aside_item__img_w(href='#')
 									img.aside_item__img(src=`images/news/${item.img}`, alt="aside news image")
 							a.aside_item__content(href='#')
 								time.aside_item__time!= item.time
