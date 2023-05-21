@@ -5,3 +5,7 @@ mixin grid_news(data)
 		.grid_news__list
 			each item in data.other_news
 				+news_item(item)
+		if data.mod_btn_more
+			button.more_btn(type='button') Завантажити ще
+		if data.mod_pagination
+			include ../../blocks/pagination
