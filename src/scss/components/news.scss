@@ -56,6 +56,11 @@
 }
 
 .news_wrapper__main {
+
+	&.news_wrapper__main--width_mod {
+		width: 100%;
+	}
+
 	@include bp($point_4, min) {
 		width: 66.66%;
 	}
