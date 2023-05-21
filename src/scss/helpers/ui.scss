@@ -52,6 +52,10 @@
 	.main_title--bold_mod & {
 		font-weight: 600;
 	}
+
+	.main_title--center_mod & {
+		margin: 0 auto;
+	}
 }
 
 .main_title__link {
@@ -173,8 +177,10 @@
 		}
 
 		&:nth-child(5) {
-			display: none;
-			margin-right: 0;
+			@include bp($point_4 - 1) {
+				display: none;
+				margin-right: 0;
+			}
 		}
 
 		&:first-child {
