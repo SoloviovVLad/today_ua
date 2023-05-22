@@ -6,13 +6,15 @@
 
 mixin author(data)
 	.author_item
-		.author_item__img_w
-			img.author_item__img(src=`images/author/author_${data.img}.png`, alt='author photo')
-		h3.author_item__name!= data.name
-		.author_item__prof!= data.prof
-		.author_item__social
-			ul.author_item__social_list
-				each item in social
-					li.author_item__social_item
-						a.author_item__social_link(href='#')
-							+icon(item,'icon--size_mod')
+		.author_item__in
+			a.author_item__link(href='/author.html')
+			.author_item__img_w
+				img.author_item__img(src=`images/author/author_${data.img}.png`, alt='author photo')
+			h3.author_item__name!= data.name
+			.author_item__prof!= data.prof
+			.author_item__social
+				ul.author_item__social_list
+					each item in social
+						li.author_item__social_item
+							a.author_item__social_link(href='#')
+								+icon(item,'icon--size_mod')

@@ -34,6 +34,10 @@
 }
 
 .author_item {
+	display: block;
+	width: 100%;
+	height: 100%;
+
 	@include bp($point_1, min) {
 		padding: 0 9rem 4.2rem 0;
 		width: 33.33%;
@@ -48,6 +52,23 @@
 		width: 100%;
 		margin-bottom: 3rem;
 	}
+
+	&:hover {
+		.author_item__name {
+			color: $orange;
+		}
+	}
+}
+
+.author_item__in {
+	position: relative;
+}
+
+.author_item__link {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
 }
 
 .author_item__img_w {
@@ -67,6 +88,10 @@
 .author_item__name {
 	font-size: 2.4rem;
 	text-align: center;
+
+	color: $text;
+
+	transition: color .3s ease-in-out;
 
 	&:not(:last-child) {
 		margin-bottom: 1rem;
