@@ -1,0 +1,33 @@
+.contact_block
+	.contact_block__in
+		+breadcrumbs([
+			{
+				title: 'Головна',
+				icon: true
+			},
+			{
+				title: 'Контакти',
+			},
+		])
+		+main_title({
+			title: 'Контактна інформація',
+			mod: 'main_title--bold_mod',
+		})
+		.contact_block__img_bg
+			img.contact_block__img(src='images/contact.png' alt='bg')
+		.contact_block__content
+			.contact_block__text
+				p
+					a(href='#') Today.ua
+					| - всеукраїнський інформаційний портал, створений для людей, які бажають знати, що сьогодні відбувається в Україні та світі, і яким чином ця інформація стосується їх особисто.
+				p
+					| Тільки чесні новини, незалежні коментарі, зображення повної картини дня з акцентом на головні події. Ми не оцінюємо факти та ситуації, а лише подаємо перевірену та неупереджену інформацію. Обирайте найцікавіше на
+					a(href='#') Today.ua
+					| та слідкуйте за тим, що відбувається в країні та за її межами.
+			.contact_block__links
+				.contact_block__links_item
+					span Email:
+					a(href='mailto:info@today.ua') info@today.ua
+				.contact_block__links_item
+					span Адреса:
+					span м. Київ, вул. Ділова 5 “літера А”, оф. 408

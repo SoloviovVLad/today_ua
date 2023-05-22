@@ -1,0 +1,12 @@
+extends layout/layout
+
+block vars
+	include ./templates/mixins/m-aside
+	include ./templates/mixins/m-main-news
+	include ./templates/mixins/m-grid-news
+
+	- array = {body_class:'', title_inner:'Contact'}
+
+block content_block
+	include ./blocks/contact-block
+	include ./blocks/author-list
