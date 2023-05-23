@@ -1,0 +1,181 @@
+.author_list {
+	padding: 6rem;
+}
+
+.author_list__in {
+	max-width: $page_width;
+	margin: 0 auto;
+
+	@include bp($point_4, min) {
+		padding: 0 1.5rem;
+	}
+
+	@include bp($point_4 - 1) {
+		padding: 0 1rem;
+	}
+}
+
+.author_list__list {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+	@include bp($point_1, min) {
+		margin: 0 -9rem -4.2rem 0;
+	}
+
+	@include bp($point_1 - 1, $point_4) {
+		margin: 0 -4rem -4rem 0;
+	}
+
+	&:not(:first-child) {
+		margin-top: 3.1rem;
+	}
+}
+
+.author_item {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	@include bp($point_1, min) {
+		padding: 0 9rem 4.2rem 0;
+		width: 33.33%;
+	}
+
+	@include bp($point_1 - 1, $point_4) {
+		padding: 0 4rem 4rem 0;
+		width: 50%;
+	}
+
+	@include bp($point_4 - 1) {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+
+	&:hover {
+		.author_item__name {
+			color: $orange;
+		}
+	}
+}
+
+.author_item__in {
+	position: relative;
+}
+
+.author_item__link {
+	position: absolute;
+
+	width: 100%;
+	height: 100%;
+}
+
+.author_item__img_w {
+	width: 9rem;
+	height: 9rem;
+	margin: 0 auto;
+
+	&:not(:last-child) {
+		margin-bottom: 1.8rem;
+	}
+}
+
+.author_item__img {
+	@include cover_img;
+}
+
+.author_item__name {
+	font-size: 2.4rem;
+	text-align: center;
+
+	color: $text;
+
+	transition: color .3s ease-in-out;
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.author_item__prof {
+	font-size: 1.6rem;
+	text-align: center;
+
+	color: $text;
+
+	&:not(:last-child) {
+		margin-bottom: .8rem;
+	}
+}
+
+.author_item__social {
+	position: relative;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: calc(50% - .5px);
+		left: 0;
+		right: 0;
+		z-index: 10;
+
+		width: 100%;
+		height: 1px;
+
+		border-top: 1px dotted #ccc;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+}
+
+.author_item__social_list {
+	position: relative;
+	z-index: 15;
+
+	display: flex;
+	max-width: max-content;
+
+	margin: 0 auto;
+	padding:0 2.2rem;
+
+	background-color: $white;
+}
+
+.author_item__social_item {
+	display: flex;
+	width: 3rem;
+	height: 3rem;
+
+	border-radius: 50%;
+	border: 1px solid #ccc;
+
+	transition: border .3s ease-in-out;
+
+	&:not(:last-child) {
+		margin-right: 1rem;
+	}
+
+	&:first-child {
+		color: #124477;
+	}
+
+	&:nth-child(2) {
+		color: #00a6e4;
+	}
+
+	&:hover {
+		border: 1px solid $orange;
+	}
+}
+
+.author_item__social_link {
+	display: block;
+	margin: auto;
+	width: 2rem;
+	height: 1.7rem;
+
+	color: currentColor;
+}

@@ -1,0 +1,17 @@
+-
+	social = [
+		'facebook',
+		'twitter'
+	]
+
+.author_block
+	.author_block__img_w
+		img.author_block__img(src='images/author/author_4.png', alt='author photo')
+	h3.author_block__name Марченко Любов
+	.author_block__social
+		ul.author_block__social_list
+			each item in social
+				li.author_block__social_item
+					a.author_block__social_link(href='#')
+						+icon(item,'icon--size_mod')
+	.author_block__descr Любов Марченко, журналіст стрічки новин. Свою, отриману ще в юності, спеціальність інженера-механіка давно поміняла на роботу журналіста. Щоправда, до цього усе ж встигла попрацювати в КБ, аби остаточно переконатись, що це не моє. З тих пір – занурилась у журналістику і тепер отримую задоволення від роботи в інтернет-ЗМІ. Люблю препарувати новини, вишукуючи в них причинно-наслідкові зв'язки.

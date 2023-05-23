@@ -70,6 +70,14 @@
 				margin-bottom: 2.6rem;
 			}
 		}
+
+		.news_wrapper__main--width_mod & {
+			max-width: 100%;
+
+			@include bp($point_1, min) {
+				width: 33.33%;
+			}
+		}
 	}
 }
 
@@ -108,6 +116,10 @@
 				margin-bottom: 1.7rem;
 			}
 		}
+	}
+
+	.news_wrapper__main--width_mod & {
+		max-width: 100%;
 	}
 
 	&:hover {

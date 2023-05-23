@@ -1,0 +1,82 @@
+extends layout/layout
+
+block vars
+	include ./templates/mixins/m-aside
+	include ./templates/mixins/m-main-news
+	include ./templates/mixins/m-grid-news
+
+	- array = {body_class:'', title_inner:'Category'}
+
+block content_block
+	.news_wrap_dev
+		+breadcrumbs([
+			{
+				title: 'Головна',
+				icon: true
+			},
+			{
+				title: 'Бізнес',
+			},
+		])
+		.news_wrapper.news_wrapper--mob_no_sidebar
+			.news_wrapper__main.news_wrapper__main--width_mod
+				+grid_news({
+					main_title: {
+						title: 'Бізнес',
+						mod: 'main_title--bold_mod'
+					},
+					mod_pagination: true,
+					mod_btn_more: true,
+					other_news: [
+						{
+							img: 'news_3.jpg',
+							title: 'В Україні наприкінці березня знизилися ціни на гречку, борошно та олію',
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_4.jpg',
+							title: 'РФ завдала одного з наймасштабніших ударів по Україні з початку війни: понад 80 ракет та атак дронами',
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_5.jpg',
+							title: 'У Міноборони розповіли, де відбудеться наступна важлива битва за Донбас',
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_6.jpg',
+							title: 'Як вижити під час бомбардування чи артобстрілу: правила безпеки під час війни',
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_7.jpg',
+							title: "Еліна Світоліна у сукні з декольте до пупка з'явилася на балу у Монако",
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_8.jpg',
+							title: '“Хочу старіти природно“: зірка “Відчайдушних домогосподарок“ здивувала зовнішнім виглядом',
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_9.jpg',
+							title: 'Сирна паска “трикутник“ без випічки: як приготувати смачне частування на свято',
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_10.jpg',
+							title: 'Топ-10 автомобілів з найбільш економною витратою палива',
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_3.jpg',
+							title: 'В Україні наприкінці березня знизилися ціни на гречку, борошно та олію',
+							date: '29 березня 2023, 12:01',
+						},
+						{
+							img: 'news_4.jpg',
+							title: 'РФ завдала одного з наймасштабніших ударів по Україні з початку війни: понад 80 ракет та атак дронами',
+							date: '29 березня 2023, 12:01',
+						},
+					]
+				})
